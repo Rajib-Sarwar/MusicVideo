@@ -19,7 +19,14 @@ class ViewController: UIViewController {
     }
 
     func didLoadData(result: String) {
-        print(result)
+        
+        let alert = UIAlertController(title: result, message: nil, preferredStyle: .Alert)
+        
+        let okAction = UIAlertAction(title: "OK", style: .Default) { action -> Void in
+            
+        }
+        alert.addAction(okAction)
+        self.presentViewController(alert, animated: true, completion: nil)
     }
     
     
