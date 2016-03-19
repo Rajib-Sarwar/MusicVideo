@@ -15,6 +15,7 @@
 		1A5F01C51C9D24A2004C8689 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A5F01C31C9D24A2004C8689 /* LaunchScreen.storyboard */; };
 		1A5F01D01C9D24A3004C8689 /* MusicVideoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5F01CF1C9D24A3004C8689 /* MusicVideoTests.swift */; };
 		1A5F01DB1C9D24A3004C8689 /* MusicVideoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5F01DA1C9D24A3004C8689 /* MusicVideoUITests.swift */; };
+		1A5F01EE1C9D44AA004C8689 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5F01ED1C9D44AA004C8689 /* APIManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		1A5F01D61C9D24A3004C8689 /* MusicVideoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicVideoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A5F01DA1C9D24A3004C8689 /* MusicVideoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicVideoUITests.swift; sourceTree = "<group>"; };
 		1A5F01DC1C9D24A3004C8689 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A5F01ED1C9D44AA004C8689 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 		1A5F01EA1C9D2ED7004C8689 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1A5F01ED1C9D44AA004C8689 /* APIManager.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A5F01EE1C9D44AA004C8689 /* APIManager.swift in Sources */,
 				1A5F01C01C9D24A2004C8689 /* MusicVideo.xcdatamodeld in Sources */,
 				1A5F01BA1C9D24A2004C8689 /* ViewController.swift in Sources */,
 				1A5F01B81C9D24A2004C8689 /* AppDelegate.swift in Sources */,
