@@ -135,6 +135,8 @@ class Videos {
             releaseDte = releaseDate["attributes"] as? JSONDictionary,
             vReleaseDte = releaseDte["label"] as? String {
                 self._vReleaseDte = vReleaseDte
+        } else {
+            self._vReleaseDte = ""
         }
         
     }
