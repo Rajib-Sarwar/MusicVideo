@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var videos = [Videos]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -18,15 +20,18 @@ class ViewController: UIViewController {
         api.loadData("https://itunes.apple.com/us/rss/topmusicvideos/limit=10/json", completion: didLoadData)
     }
 
-    func didLoadData(result: String) {
+    func didLoadData(videos: [Videos]) {
+
+        self.videos = videos
         
-        let alert = UIAlertController(title: result, message: nil, preferredStyle: .Alert)
-        
-        let okAction = UIAlertAction(title: "OK", style: .Default) { action -> Void in
-            
+        for (index, item) in videos.enumerate() {
+            print("\(index) : ")
+            print("   name: \(item.vName)")
+            print("   artist: \(item.vArtist)")
+            print("   price: \(item.vPrice)")
+            print("   Release: \(item.vReleaseDte)")
+            print("\n")
         }
-        alert.addAction(okAction)
-        self.presentViewController(alert, animated: true, completion: nil)
     }
     
     
