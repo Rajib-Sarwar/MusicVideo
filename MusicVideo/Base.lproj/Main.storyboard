@@ -16,11 +16,31 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i5A-du-LZx">
+                                <rect key="frame" x="128" y="289" width="345" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="345" id="K0b-Yd-GcF"/>
+                                    <constraint firstAttribute="height" constant="21" id="Yml-OW-nB8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="i5A-du-LZx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="e5k-yL-0yy"/>
+                            <constraint firstItem="i5A-du-LZx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xdc-R2-eeS"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="diaplayLabel" destination="i5A-du-LZx" id="8o7-l9-cZr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="172" y="159"/>
         </scene>
     </scenes>
 </document>

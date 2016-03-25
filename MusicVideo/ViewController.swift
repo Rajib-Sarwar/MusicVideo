@@ -12,13 +12,20 @@ class ViewController: UIViewController {
 
     var videos = [Videos]()
     
+    @IBOutlet weak var diaplayLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "reachabilityStatusChanged", name: "ReachStatusChanged", object: nil)
+        
+        reachabilityStatusChanged()
         
         //Call API
         let api = APIManager()
         api.loadData("https://itunes.apple.com/us/rss/topmusicvideos/limit=100/json", completion: didLoadData)
     }
+    
 
     func didLoadData(videos: [Videos]) {
 
@@ -36,6 +43,22 @@ class ViewController: UIViewController {
         }
     }
     
+    
+    func reachabilityStatusChanged() {
+        switch reachabilityStatus {
+        case NOACCESS : view.backgroundColor = UIColor.redColor()
+        diaplayLabel.text = NOACCESS
+        case WIFI : view.backgroundColor = UIColor.greenColor()
+        diaplayLabel.text = WIFI
+        case WWAN : view.backgroundColor = UIColor.yellowColor()
+        diaplayLabel.text = WWAN
+        default: return
+        }
+    }
+    
+    deinit{
+        NSNotificationCenter.defaultCenter().removeObserver(self, name: "ReachStatusChanged", object: nil)
+    }
     
 }
 
