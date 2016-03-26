@@ -18,10 +18,6 @@ class VideoTableVC: UITableViewController {
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "reachabilityStatusChanged", name: "ReachStatusChanged", object: nil)
         
         reachabilityStatusChanged()
-        
-        //Call API
-        let api = APIManager()
-        api.loadData("https://itunes.apple.com/us/rss/topmusicvideos/limit=100/json", completion: didLoadData)
     }
     
     
@@ -46,17 +42,52 @@ class VideoTableVC: UITableViewController {
     
     func reachabilityStatusChanged() {
         switch reachabilityStatus {
-        case NOACCESS : view.backgroundColor = UIColor.redColor()
-        navigationController?.navigationBar.layer.backgroundColor = UIColor.redColor().CGColor
-        navigationController?.toolbar.barTintColor = UIColor.redColor()
-        case WIFI : view.backgroundColor = UIColor.greenColor()
-        navigationController?.navigationBar.layer.backgroundColor = UIColor.greenColor().CGColor
-        navigationController?.toolbar.barTintColor = UIColor.greenColor()
-        case WWAN : view.backgroundColor = UIColor.yellowColor()
-        navigationController?.navigationBar.layer.backgroundColor = UIColor.yellowColor().CGColor
-        navigationController?.toolbar.barTintColor = UIColor.yellowColor()
-        default: return
+        case NOACCESS :
+            view.backgroundColor = UIColor.redColor()
+            navigationController?.navigationBar.layer.backgroundColor = UIColor.redColor().CGColor
+            navigationController?.toolbar.barTintColor = UIColor.redColor()
+            
+            dispatch_async( dispatch_get_main_queue()) {
+                let alert = UIAlertController(title: NOACCESS, message: "Please make sure you are connected to the internet", preferredStyle: .Alert)
+                
+                let cancelAction = UIAlertAction(title: "Cancel", style: .Default) { action -> Void in
+                    print("Cancel")
+                }
+                let deleteAction = UIAlertAction(title: "Delete", style: .Destructive) { action -> Void in
+                    print("Delete")
+                }
+                let okAction = UIAlertAction(title: "OK", style: .Default) { action -> Void in
+                    print("OK")
+                }
+                
+                alert.addAction(okAction)
+                alert.addAction(cancelAction)
+                alert.addAction(deleteAction)
+                
+                self.presentViewController(alert, animated: true, completion: nil)
+            }
+        default:
+            if(reachabilityStatus == WWAN) {
+                view.backgroundColor = UIColor.yellowColor()
+                navigationController?.navigationBar.layer.backgroundColor = UIColor.yellowColor().CGColor
+                navigationController?.toolbar.barTintColor = UIColor.yellowColor()
+            } else {
+                view.backgroundColor = UIColor.greenColor()
+                navigationController?.navigationBar.layer.backgroundColor = UIColor.greenColor().CGColor
+                navigationController?.toolbar.barTintColor = UIColor.greenColor()
+            }
+            if videos.count > 0 {
+                print("Do not refresh API")
+            } else {
+                runAPI()
+            }
         }
+    }
+    
+    func runAPI() {
+        //Call API
+        let api = APIManager()
+        api.loadData("https://itunes.apple.com/us/rss/topmusicvideos/limit=100/json", completion: didLoadData)
     }
     
     deinit{
