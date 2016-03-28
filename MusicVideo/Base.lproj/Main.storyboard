@@ -25,14 +25,14 @@
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sba-uS-eVG">
                                             <rect key="frame" x="8" y="8" width="172" height="115"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="172" id="zXa-cf-Ili"/>
+                                                <constraint firstAttribute="width" constant="172" id="Tfi-wf-XLm"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ttr-YI-oym">
-                                            <rect key="frame" x="188" y="12" width="39" height="28"/>
+                                            <rect key="frame" x="188" y="12" width="47" height="28"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="39" id="Wlo-s1-xfD"/>
-                                                <constraint firstAttribute="height" constant="28" id="gRg-La-A34"/>
+                                                <constraint firstAttribute="height" constant="28" id="19T-1n-G25"/>
+                                                <constraint firstAttribute="width" constant="47" id="rhE-ug-6K4"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -47,15 +47,15 @@
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>
-                                        <constraint firstItem="ttr-YI-oym" firstAttribute="top" secondItem="JBc-sN-28b" secondAttribute="topMargin" constant="4" id="6z3-f1-ZFB"/>
-                                        <constraint firstItem="sba-uS-eVG" firstAttribute="top" secondItem="JBc-sN-28b" secondAttribute="topMargin" id="GkV-pA-vu0"/>
-                                        <constraint firstItem="o7p-gO-zc9" firstAttribute="top" secondItem="ttr-YI-oym" secondAttribute="bottom" constant="8" symbolic="YES" id="P4b-1G-4Dr"/>
-                                        <constraint firstItem="sba-uS-eVG" firstAttribute="bottom" secondItem="JBc-sN-28b" secondAttribute="bottomMargin" id="Qim-p6-yGZ"/>
-                                        <constraint firstItem="sba-uS-eVG" firstAttribute="bottom" secondItem="o7p-gO-zc9" secondAttribute="bottom" id="SoE-Q3-YCv"/>
-                                        <constraint firstItem="ttr-YI-oym" firstAttribute="leading" secondItem="sba-uS-eVG" secondAttribute="trailing" constant="8" symbolic="YES" id="Yn5-Ye-azi"/>
-                                        <constraint firstItem="o7p-gO-zc9" firstAttribute="trailing" secondItem="JBc-sN-28b" secondAttribute="trailingMargin" id="gsW-V2-ovd"/>
-                                        <constraint firstItem="ttr-YI-oym" firstAttribute="leading" secondItem="o7p-gO-zc9" secondAttribute="leading" id="i6m-Hf-uBP"/>
-                                        <constraint firstItem="sba-uS-eVG" firstAttribute="leading" secondItem="JBc-sN-28b" secondAttribute="leadingMargin" id="pCV-fl-esR"/>
+                                        <constraint firstItem="ttr-YI-oym" firstAttribute="top" secondItem="JBc-sN-28b" secondAttribute="topMargin" constant="4" id="5d2-VE-b17"/>
+                                        <constraint firstItem="o7p-gO-zc9" firstAttribute="bottom" secondItem="sba-uS-eVG" secondAttribute="bottom" id="6w6-5p-qcx"/>
+                                        <constraint firstItem="o7p-gO-zc9" firstAttribute="trailing" secondItem="JBc-sN-28b" secondAttribute="trailingMargin" id="AwR-JY-Mfq"/>
+                                        <constraint firstItem="o7p-gO-zc9" firstAttribute="bottom" secondItem="JBc-sN-28b" secondAttribute="bottomMargin" id="KTw-bH-fAC"/>
+                                        <constraint firstItem="ttr-YI-oym" firstAttribute="leading" secondItem="sba-uS-eVG" secondAttribute="trailing" constant="8" symbolic="YES" id="oap-n2-a4i"/>
+                                        <constraint firstItem="sba-uS-eVG" firstAttribute="leading" secondItem="JBc-sN-28b" secondAttribute="leadingMargin" id="rqG-06-QqP"/>
+                                        <constraint firstItem="o7p-gO-zc9" firstAttribute="top" secondItem="ttr-YI-oym" secondAttribute="bottom" constant="8" symbolic="YES" id="sXR-Tl-oOF"/>
+                                        <constraint firstItem="ttr-YI-oym" firstAttribute="leading" secondItem="o7p-gO-zc9" secondAttribute="leading" id="tRx-TG-edU"/>
+                                        <constraint firstItem="sba-uS-eVG" firstAttribute="top" secondItem="JBc-sN-28b" secondAttribute="topMargin" id="zgF-9h-ABm"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>

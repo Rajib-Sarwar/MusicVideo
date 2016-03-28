@@ -24,6 +24,9 @@ class MusicVideoCell: UITableViewCell {
     
     func updateCell() {
         
+        musicTitle.font = UIFont.preferredFontForTextStyle(UIFontTextStyleHeadline)
+        rank.font = UIFont.preferredFontForTextStyle(UIFontTextStyleBody)
+        
         musicTitle.text = videos?.vName
         rank.text = ("\(videos!.vRank)")
 //        musicImage.image = UIImage(named: "imageNotAvailable")
