@@ -23,7 +23,7 @@ class Videos {
     private var _vLinkToiTunes: String
     private var _vReleaseDte: String
     
-    var vImageData: NSData?
+    var vImageData: NSData? 
     
     var vName: String {
         return _vName
