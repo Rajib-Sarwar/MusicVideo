@@ -21,6 +21,7 @@
 		1A5F01F51C9DBEE1004C8689 /* MusicVideos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5F01F41C9DBEE1004C8689 /* MusicVideos.swift */; };
 		1A5F020D1C9EDB57004C8689 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5F020C1C9EDB57004C8689 /* Reachability.m */; };
 		1A929C551CA9580600A5FC66 /* MusicVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A929C541CA9580600A5FC66 /* MusicVideoCell.swift */; };
+		1A929C571CABFEE600A5FC66 /* MusicDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A929C561CABFEE600A5FC66 /* MusicDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		1A5F020B1C9EDB57004C8689 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		1A5F020C1C9EDB57004C8689 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		1A929C541CA9580600A5FC66 /* MusicVideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicVideoCell.swift; sourceTree = "<group>"; };
+		1A929C561CABFEE600A5FC66 /* MusicDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 			children = (
 				1A5F01C31C9D24A2004C8689 /* LaunchScreen.storyboard */,
 				1A5F01BB1C9D24A2004C8689 /* Main.storyboard */,
+				1A929C561CABFEE600A5FC66 /* MusicDetailViewController.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				TargetAttributes = {
 					1A5F01B31C9D24A1004C8689 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 9Y64278C3K;
 					};
 					1A5F01CA1C9D24A2004C8689 = {
 						CreatedOnToolsVersion = 7.2;
@@ -338,6 +342,7 @@
 				1A04B67B1CA66AA000CA08B9 /* VideoTableVC.swift in Sources */,
 				1A5F01BA1C9D24A2004C8689 /* ViewController.swift in Sources */,
 				1A5F01B81C9D24A2004C8689 /* AppDelegate.swift in Sources */,
+				1A929C571CABFEE600A5FC66 /* MusicDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,10 +485,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Brian Ellis (UJJBQMCN73)";
 				INFOPLIST_FILE = MusicVideo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ayon.MusicVideo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "91a8fe5d-5820-4fe9-b94d-2e3a22d27e33";
 				SWIFT_OBJC_BRIDGING_HEADER = "MusicVideo/MusicVideo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -494,6 +501,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				INFOPLIST_FILE = MusicVideo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ayon.MusicVideo;
