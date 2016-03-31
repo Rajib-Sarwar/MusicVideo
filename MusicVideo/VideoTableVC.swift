@@ -114,6 +114,7 @@ class VideoTableVC: UITableViewController {
     
     private struct storyboard {
         static let cellReuseableIdentifier = "cell"
+        static let segueIdentifier = "musicDetail"
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -122,5 +123,15 @@ class VideoTableVC: UITableViewController {
         cell.videos = videos[indexPath.row]
         
         return cell
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == storyboard.segueIdentifier {
+            if let indexpath = tableView.indexPathForSelectedRow {
+                let video = videos[indexpath.row]
+                let dvc = segue.destinationViewController as! MusicDetailViewController
+                dvc.videos = video
+            }
+        }
     }
 }

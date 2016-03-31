@@ -150,6 +150,7 @@
 				1A929C541CA9580600A5FC66 /* MusicVideoCell.swift */,
 				1A5F01B91C9D24A2004C8689 /* ViewController.swift */,
 				1A04B67A1CA66AA000CA08B9 /* VideoTableVC.swift */,
+				1A929C561CABFEE600A5FC66 /* MusicDetailViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -168,7 +169,6 @@
 			children = (
 				1A5F01C31C9D24A2004C8689 /* LaunchScreen.storyboard */,
 				1A5F01BB1C9D24A2004C8689 /* Main.storyboard */,
-				1A929C561CABFEE600A5FC66 /* MusicDetailViewController.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
