@@ -40,7 +40,6 @@ class MusicDetailViewController: UIViewController {
         vPrice.font = UIFont.preferredFontForTextStyle(UIFontTextStyleHeadline)
         vGenre.font = UIFont.preferredFontForTextStyle(UIFontTextStyleHeadline)
         vRights.font = UIFont.preferredFontForTextStyle(UIFontTextStyleHeadline)
-        
     }
     
     deinit{
