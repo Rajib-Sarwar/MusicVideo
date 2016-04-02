@@ -40,7 +40,7 @@ class SettingTVC: UITableViewController {
         let defaults = NSUserDefaults.standardUserDefaults()
         defaults.setObject(Int(sliderCnt.value), forKey: "APICNT")
         APICnt.text = "\(Int(sliderCnt.value))"
-    }
+    } 
     
     @IBAction func touchIDSec(sender: UISwitch) {
         let defaults = NSUserDefaults.standardUserDefaults()
