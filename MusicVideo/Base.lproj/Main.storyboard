@@ -238,6 +238,9 @@
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="ONQ-wR-j4b"/>
                         <barButtonItem systemItem="action" id="gwu-F6-s5a">
                             <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="socialMedia:" destination="TQQ-W4-Dzo" id="vnZ-AP-oBs"/>
+                            </connections>
                         </barButtonItem>
                     </toolbarItems>
                     <connections>
@@ -427,7 +430,7 @@
                                                         <constraint firstAttribute="height" constant="29" id="kZj-yR-DCO"/>
                                                         <constraint firstAttribute="width" constant="171" id="lX2-go-ybi"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
