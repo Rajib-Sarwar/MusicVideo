@@ -84,7 +84,4 @@ class MusicDetailViewController: UIViewController {
         
         presentViewController(activityViewController, animated: true, completion: nil)
     }
-    
-    
-    
 }
